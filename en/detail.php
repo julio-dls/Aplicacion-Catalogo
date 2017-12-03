@@ -127,7 +127,7 @@ Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low pri
                     <h3 id="colorPhone">I would also like you</h3>
                 </header>
             </article>
-            <div class="row">
+            <div class="row" id="centrar">
             <?php
             $idProducto = $rows['producto_id'];
             $sql = "SELECT producto_id FROM productos";

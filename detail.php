@@ -127,7 +127,7 @@ function redirect($pURL) {
                     <h3 id="colorPhone">También le prodía gustar</h3>
                 </header>
             </article>
-            <div class="row">
+            <div class="row" id="centrar">
             <?php
             $idProducto = $rows['producto_id'];
             $sql = "SELECT producto_id FROM productos";
