@@ -41,13 +41,13 @@
           </div>
       </header>
     <!-- HEADER END -->
-    
+
     <!--sidebar start-->
     <aside>
       <?php include_once('inc/sidebar.php'); ?>
     </aside>
     <!--sidebar end-->
-    
+
     <!-- COMIENZON DE FORM-->
     <section id="main-content" class="wrapper">
      <div class="container">
@@ -59,7 +59,8 @@
           <h6 class="mb"><span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:blue"></span>
             <strong>Todos los campos son obligatorios, de lo contrario no cargara las imagenes</strong></h6>
           <h6 class="mb"><span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:blue"></span>
-            <strong>Puede insertar de a una imagen o un grupo de ellas de las cuales en galeria se vera solo una y en detalle todas las ingresadas pertenecientes al mismo grupo</strong></h6>
+            <strong>Puede insertar de a una imagen o un grupo de ellas de las cuales en galeria se vera solo una
+            y en detalle todas las ingresadas pertenecientes al mismo grupo</strong></h6>
           <form class="form-horizontal tasi-form text-center" action="panel.php" method="post" enctype="multipart/form-data">
               <div class="form-group has-success">
                   <label class="col-sm-2 control-label col-lg-2" for="inputSuccess">Nombre</label>
@@ -131,12 +132,12 @@
                   </div>
               </div>
               <div class="form-group has-success">
-                  <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-md-offset-4">
                       <button id="inputSuccess" type="submit" class="btn btn-primary btn-lg btn-block">Aplicar</button>
                   </div>
               </div>
               <div class="form-group has-success">
-                  <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-md-offset-4">
                     <button id="inputSuccess" type="reset" class="btn btn-warning btn-lg btn-block" onclick="desblock(true)">Limpiar</button>
                   </div>
               </div>
@@ -160,7 +161,7 @@
     </footer>
   </section>
   <!-- FOOTER END -->
-  
+
     <!-- comienzo bloqueo campos -->
     <script type="text/javascript">
       function detectionFocus(valor) {

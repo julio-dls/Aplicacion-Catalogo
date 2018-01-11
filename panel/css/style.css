@@ -10,6 +10,7 @@
   top:0px;
   left:0px;
   border:none;
+  opacity: 1;
 }
 .scrollable {
   height: 550px;

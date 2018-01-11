@@ -54,8 +54,7 @@ $imgindex->isLog();
           <?php
           $imagenes = $con->query("SELECT imgIndex_id from imgindex ORDER BY imgIndex_id ASC");
           foreach ($imagenes as $key) { ?>
-              <img class="img-thumbnail img-responsive imangesIndex" id="imagenesSeleccionar"
-              src="/images/img/<?=$key[0]?>/img_0_thumb.jpg" data-posicion="<?=$key[0]?>">
+              <img class="img-thumbnail img-responsive imangesIndex" src="/images/img/<?=$key[0]?>/img_0_thumb.jpg" data-posicion="<?=$key[0]?>">
           <?php } ?>
           </div>
           <div class="form-panel col-lg-6">
@@ -65,7 +64,7 @@ $imgindex->isLog();
             <form class="form-horizontal tasi-form text-center" action="imgIndexPanel.php" method="POST" enctype="multipart/form-data">
               <div class="form-group has-success">
                   <div class="col-lg-10">
-                      <input hidden="true" type="text" name="id-oculto" id="id-oculto" value="">
+                      <input hidden="true" type="text" name="id-oculto" class="id-oculto" value="">
                   </div>
               </div>
               <div class="form-group has-success">
@@ -91,9 +90,9 @@ $imgindex->isLog();
       <!--FIN DE FORM-->
     </section>
     <!-- FIN CONTAINER-->
-    
+
     <!-- FOOTER START -->
-    <section style="position: absolute;bottom: 0; width: 100%;height: 60px;"id="footer" >
+    <section style="position: absolute;bottom: 0; width: 100%;height: 60px; "id="footer" >
       <footer class="site-footer">
         <div class="panel-body text-center">
           2017 - TRIBU CUEROS
@@ -102,12 +101,25 @@ $imgindex->isLog();
       </footer>
     </section>
     <!-- FOOTER END -->
+
     <script src="/panel/js/jquery.js"></script>
     <script src="/panel/js/jquery.scrollTo.min.js"></script>
     <script src="/panel/js/jquery.dcjqaccordion.2.7.js" class="include" type="text/javascript"></script>
     <!---hacer el menu desplegable y decorarlo-->
     <script src="/panel/js/jquery.nicescroll.js" type="text/javascript"></script>
     <!--script para toda la pagina-->
+    <script src="/panel/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="/panel/js/common-scripts.js"></script>
+
+    <script>
+    $(document).ready(function() {
+      $('.imangesIndex').on('click', function() {
+        $this = $(this);
+        var imgSeleccionada = $this.attr('data-posicion');
+        $('.id-oculto').attr("value", imgSeleccionada);
+        console.log($('.id-oculto').val());
+      });
+    });
+    </script>
   </body>
   </html>

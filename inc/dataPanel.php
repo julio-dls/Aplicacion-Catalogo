@@ -9,6 +9,7 @@ class dataPanel {
     function InsertarProcuto($data = array(),$fImg = array()) {
       if (!empty($data['categoria'])) {
         $categ = $this->con->query->("SELECT categoria_id FROM CATEGORIAS WHERE NOMBRE = '".$data['categoria']."' ")->fetch();
+          var_dump($categ);
       } else {
         $categ['categoria_id'] = 0;
       }

@@ -8,7 +8,9 @@ var ImagenSeleccionada = (function() {
     $('.imangesIndex').on('click', function() {
       $this = $(this);
       var idImagenSeleccionada = $this.attr('data-posicion');
-      $("#id-oculto").val("" + idImagenSeleccionada);
+      //$("#id-oculto").val("" + idImagenSeleccionada);
+      $('.id-oculto').attr("value" + idImagenSeleccionada);
+      console.log("Id de La imagen" + idImagenSeleccionada);
     });
   }
 

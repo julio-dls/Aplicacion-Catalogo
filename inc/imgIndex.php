@@ -10,12 +10,12 @@ class imgIndex extends dataPanel {
   }
 
   function nuevaImgIndex($data = array(),$imgIn = array()){
-      $count = $this->con->query("SELECT imgindex_id FROM imgindex  WHERE imgindex_id = '".$data['id-oculto']."' ")->fetch();
-      $i = $count['imgindex_id'];
-
+      //$count = $this->con->query("SELECT imgindex_id FROM imgindex  WHERE imgindex_id = '".$data['id-oculto']."' ")->fetch();
+      //$i = $count['imgindex_id'];
+      $i = $data['id-oculto'];
       foreach ($imgIn['imgPortada']['name'] as $posicion => $value) {
 
-        $ruta = '../Ange-Web/images/img/'.$i;
+        $ruta = './images/img/'.$i;
         @mkdir($ruta);
 
         $tamanhos = array('1'=>array('ancho'=>'380','alto'=>'480','nombre'=>'small'),
@@ -23,7 +23,7 @@ class imgIndex extends dataPanel {
                           '3'=>array('ancho'=>'100','alto'=>'100','nombre'=>'thumb')
                         );
 
-        redimensionar('../Ange-Web/images/img/'.$i.'/',
+        redimensionar($ruta .'/',
                       $imgIn['imgPortada']['name'][$posicion],
                       $imgIn['imgPortada']['tmp_name'][$posicion],
                       $posicion,
