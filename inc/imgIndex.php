@@ -13,6 +13,7 @@ class imgIndex extends dataPanel {
       //$count = $this->con->query("SELECT imgindex_id FROM imgindex  WHERE imgindex_id = '".$data['id-oculto']."' ")->fetch();
       //$i = $count['imgindex_id'];
       $i = $data['id-oculto'];
+      
       foreach ($imgIn['imgPortada']['name'] as $posicion => $value) {
 
         $ruta = './images/img/'.$i;
