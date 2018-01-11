@@ -1,7 +1,7 @@
 <?php
   session_start();
-  include_once('inc/config_conexion_db.php');
-  include_once('inc/dataPanel.php');
+  include_once ('inc/config_conexion_db.php');
+  include_once ('inc/dataPanel.php');
 
   $dPanel = new dataPanel($con);
   $dPanel->isLog();

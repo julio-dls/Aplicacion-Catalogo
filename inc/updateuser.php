@@ -10,19 +10,16 @@ include_once 'password_reset.php';
 * Auth:	PLAIN, LOGIN and CRAM-MD5
 * TLS:	Optional
 */
-class updateuser
-{
+class updateuser {
   private $con;
   const SECRET_PASS = '8b7d99ed39a6ea';
   const SECRET_USER = '095854ad93c9d4';
 
-  function __construct($con)
-  {
+  function __construct($con) {
     $this->con=$con;
   }
 
-  function exist($data = array())
-  {
+  function exist($data = array()) {
     $result=$this->con->query("select email,nombre from usuarios where email = '".$data['email']."' or nombre_usuario = '".$data['email']."' ")->fetch();
 
     if (!empty($result['nombre']) && !empty($result['email']))

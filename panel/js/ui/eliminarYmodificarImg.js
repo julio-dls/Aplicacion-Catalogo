@@ -28,7 +28,7 @@ var eliminarYmodificarImg = (function(){
   function obtenerIdImagen() {
     $('.btn-modificar').on('click', function() {
       $this = $(this);
-      idImg = $this.attr('data-id-modificar');
+      var idImg = $this.attr('data-id-modificar');
     });
   }
 
