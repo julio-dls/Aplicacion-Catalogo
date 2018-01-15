@@ -31,13 +31,14 @@ class updateuser {
                                 VALUES ('','".$result['nombre']."','".$codigo."','".date('d/m/y h:i:s')."','false','".$result['email']."'); ");
       $mail = new PHPMailer;
       $mail->isSMTP();                                                          //ESTABLECER EL USO DE CORREO
-      $mail->Host = 'smtp.mailtrap.io';
+      $mail->Host =  'smtp.gmail.com';//'smtp.mailtrap.io';
       $mail->SMTPAuth = true;
       $mail->Username = self::SECRET_USER;
       $mail->Password = self::SECRET_PASS;                                      //CONTRASEÑA EN CONSTANTES
-      $mail->SMTPOptions = array('ssl' => array('verify_peer' => false,'verify_peer_name' => false,'allow_self_signed' => true));
-      $mail->Port = 25;
-      $mail->setFrom('no-reply@gmail.com');                                     //REMITENTE
+      // $mail->SMTPOptions = array('ssl' => array('verify_peer' => false,'verify_peer_name' => false,'allow_self_signed' => true));
+      $mail->SMTPSecure = "ssl";
+      $mail->Port = 465;
+      $mail->setFrom('<noreply...@gmail.com>');                                  //REMITENTE
       $mail->addAddress($result['email']);                                      //DESTINATARIO
       $mail->isHTML(true);                                                      // EL CORREO SE ENVIA COMO HTML
       $mail->CharSet = 'UTF-8';                                                 //ACTIVOS CODIFICACION utf-8

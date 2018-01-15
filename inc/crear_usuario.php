@@ -16,20 +16,18 @@ class crear_usuario {
 
       $insertUserPermisos = $this->con->query("SELECT permisos.id FROM permisos WHERE permisos.nombre = '".$data['privilegiosR']."' ")->fetch();
 
-      $sqlInsert = "INSERT INTO `usuarios`(`id`, `email`, `pass`, `nombre`, `nombre_usuario`, `permisos`)
-      VALUES  ('','".$data['email']."','".md5($data['pass'])."','".$data['nombre']."','".$data['nameusuario']."','".$insertUserPermisos['id']."' )";
-
-      echo $sqlInsert;
+      $sqlInsert = "INSERT INTO `usuarios`(`email`, `pass`, `nombre`, `nombre_usuario`, `permisos`)
+      VALUES  ('".$data['email']."','".md5($data['pass'])."','".$data['nombre']."','".$data['nameusuario']."','".$insertUserPermisos['id']."' )";
 
       $insertUser = $this->con->exec($sqlInsert);
-      print_r($this->con->errorInfo());
+      //print_r($this->con->errorInfo());
       if ($insertUser) {
         redirect('login.php');
       } else {
-          //redirect('register.php?Aviso=visible');
+          redirect('register.php?Aviso=visible');
         }
     } else {
-        //redirect('register.php?Aviso=visible');
+        redirect('register.php?Aviso=visible');
       }
   }
   // CORROBORAR QUE ESTA LOGUEADO

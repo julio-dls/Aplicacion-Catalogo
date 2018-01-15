@@ -26,14 +26,16 @@ class contact
     {
       $mail = new PHPMailer;
       $mail->isSMTP();                                                          //ESTABLECER EL USO DE CORREO
-      $mail->Host = 'smtp.mailtrap.io';
+      $mail->Host =  'smtp.gmail.com';//'smtp.mailtrap.io';
       $mail->SMTPAuth = true;
       $mail->Username = self::SECRET_USER;
       $mail->Password = self::SECRET_PASS;                                      //CONTRASEÑA EN CONSTANTES
-      $mail->SMTPOptions = array('ssl' => array('verify_peer' => false,'verify_peer_name' => false,'allow_self_signed' => true));
-      $mail->Port =25 or 465 or 2525;
-      $mail->setFrom('no-reply@gmail.com');                                     //REMITENTE
-      $mail->addAddress($data['email']);                                        //DESTINATARIO
+      // $mail->SMTPOptions = array('ssl' => array('verify_peer' => false,'verify_peer_name' => false,'allow_self_signed' => true));
+      $mail->SMTPSecure = "ssl";
+      $mail->Port = 465;
+      // $mail->Port = 25 or 465 or 587;
+      $mail->setFrom($data['email']);                                           //REMITENTE
+      $mail->addAddress(self::SECRET_USER);                                     //DESTINATARIO
       $mail->isHTML(true);                                                      //EL CORREO SE ENVIA COMO HTML
       $mail->Subject  = "Consutla de: " .$data['name'];                         //ASUNTO
       $mail->Body =
@@ -57,11 +59,11 @@ class contact
         '</body>'.
       '</html>';
       $mail->send();
-      /*if(!$mail->send()) {
-        echo 'Mailer error: ' .$mail->ErrorInfo;
-      } else {
-        echo 'Message has been sent.';
-      }*/
+      // if(!$mail->send()) {
+      //   echo 'Mailer error: ' .$mail->ErrorInfo;
+      // } else {
+      //   echo 'Message has been sent.';
+      // }
     }
   }
 }
