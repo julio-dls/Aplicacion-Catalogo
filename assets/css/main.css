@@ -102,6 +102,7 @@ body {
 
 #colorPhone {
   color: #df7366;
+    font-weight: bold;
 }
 
 #cambios {
@@ -399,14 +400,18 @@ input[type="button"].style2:active, input[type="submit"].style2:active, input[ty
 .callout {
   display: table;
   width: 100%;
-  height: 500px;
+  height: initial; /*  height: 500px;*/
   background: url(../../images/muestra/fondoTexto.jpg) no-repeat fixed center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
-
+.fondoTransparente{
+	background:#0000006b;
+	 width: 100%;
+    height: initial;
+}
 .margen {
   margin-top: 20px;
 }
@@ -1744,11 +1749,13 @@ h4 {
   font-size: 1em;
   margin: 0 0 0.25em 0;
 }
-
+#informacion{
+   color: #483949; 
+}
 strong, b {
   font-weight: 700;
   /*400*/
-  color: #482f1b;
+  color: white;  /*#482f1b*/
   /*483949*/
 }
 

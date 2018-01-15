@@ -42,29 +42,29 @@ Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low pri
                         <h2 id="cambios">LEATHER CARE</h2>
                     </header>
                     <p>
-                        <b>Protection of wallets and small leather goods.</b>
+                        <b id="informacion">Protection of wallets and small leather goods.</b>
                     </p>
                     <p>
                       For leather products, such as nappa, floater, croco, lizard, firenze, etc. It is advisable to protect it with colorless silicones (the polishing of aerosol furniture is a good option). You should never apply the silicone directly on the material, before it should be applied on a dry cloth and this on the product. Never wash in a washing machine or store the product in humid places.</p>
                     <p>
-                        <b>Footwear Protection</b>
+                        <b id="informacion">Footwear Protection</b>
                     </p>
                     <p>
                       It is advisable to wipe with a dry cloth to remove excess dust and then place colorless waxes to protect leather from footwear. Avoid storing both shoes in the same bag or box, because, due to the use, the sole can with dust and mistreat the material, especially in suede materials.</p>
                     <p>
-                        <b>Spills of liquids</b>
+                        <b id="informacion">Spills of liquids</b>
                     </p>
                     <p>
                       In case of spills, dry the liquid immediately with a clean cloth or dry absorbent sponge. Do not rub. Then dry with a clean towel and let dry the article to the environment (not to the sun). Never dry the material with a dryer, since the heat can damage the material.
                     </p>
                     <p>
-                        <b>Oil or grease</b>
+                        <b id="informacion">Oil or grease</b>
                     </p>
                     <p>
                       In the case of oil or grease stains consult specialized dry cleaners. Remember that leather is skin and are very susceptible to the absorption of these fluids.
                     </p>
                     <p>
-                        <b>Tips and recommendations</b>
+                        <b id="informacion">Tips and recommendations</b>
                     </p>
                     <ul>
                         <li>*The cleaning of the garments must be done in specialized dry cleaners.</li>
@@ -73,7 +73,7 @@ Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low pri
                         <li>*Never use: Glycerine soap, abrasive cleaners, varnish, detergent or other cleaning products, alcohols or ammonia water.</li>
                     </ul>
                     <p>
-                        <b>Special materials</b>
+                        <b id="informacion">Special materials</b>
                     </p>
                     <p>
                       Chamois: Chamois with suede finishes deserve special treatment.
@@ -109,7 +109,7 @@ Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low pri
 
                     </header>
                     <p>
-                      At Tribu Cueros, we strive to ensure that our products are of the highest quality. However, some products may have some damage caused by transport or handling. In the event that this occurs please contact the <span id="colorPhone">011 49538621 / cell phone 1560452938</span> or send an email to <span id="colorPhone">Info@tribucueros.com.ar</span>
+                      At Tribu Cueros, we strive to ensure that our products are of the highest quality. However, some products may have some damage caused by transport or handling. In the event that this occurs please contact the <span id="colorPhone">011 49538621  / </span> <span id="colorPhone">WhatSapp(+54) 011-15-60452938 </span> or send an email to <span id="colorPhone">info@tribucueros.com.ar</span>
                     </p>
                     <ul>
                         <li><strong>To resend damaged purchased products you must do the following:</strong></li>
@@ -133,7 +133,7 @@ Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low pri
                       Once the order has been withdrawn by the logistics company, we will send you an email with the guide number. With this guide number, these companies will be the ones who will provide you with tracking information on the delivery, from the departure from our premises to the delivery at the address indicated at the time of purchase. Delivery time depends on the way it is shipped.
                     </p>
                     <p>
-                      If you have lost your guide number, call the <span id="colorPhone">011 49538621 </span> or send us an email to <span id="colorPhone">Info@tribucueros.com.ar</span>
+                      If you have lost your guide number, call the <span id="colorPhone">011 49538621 </span> / <span id="colorPhone">WhatSapp(+54) 011-15-60452938 </span> or send us an email to <span id="colorPhone">info@tribucueros.com.ar</span>
                     </p>
 
                 </section>

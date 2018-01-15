@@ -34,31 +34,31 @@
                         <h2 id="cambios">CUIDADO DEL CUERO</h2>
                     </header>
                     <p>
-                        <b>Protección de carteras y pequeña marroquinería</b>
+                        <b id="informacion">Protección de carteras y pequeña marroquinería</b>
                     </p>
                     <p>
                         Para producto de cuero, tales como napa, floater, croco , lagarto, firenze, etc. se aconseja proteger con siliconas incoloras (los lustra muebles en aerosol son una buena opción). Nunca debe aplicar la silicona directamente sobre el material, antes se debe aplicar sobre un paño seco y este sobre el producto. Nunca lavar en lavarropas ni guardar el producto en lugares húmedos.
                     </p>
                     <p>
-                        <b>Protección Calzado</b>
+                        <b id="informacion">Protección Calzado</b>
                     </p>
                     <p>
                         Se aconseja limpiar con un paño seco para eliminar los excedentes de polvo y luego colocar ceras incoloras para proteger el cuero del calzado. Evitar guardar ambos zapatos en la misma bolsa o caja, ya que, debido al uso, la suela puede con polvo y maltratar el material, especialmente en materiales gamuzados.
                     </p>
                     <p>
-                        <b>Derrames de líquidos</b>
+                        <b id="informacion">Derrames de líquidos</b>
                     </p>
                     <p>
                         En el caso de derrames, secar el liquido inmediatamente con un paño limpio o una esponja absorbente seca. No frotar. Luego secar con una toalla limpia y dejar secar el articulo al ambiente.( no al sol) Nunca se debe secar el material con secadora, ya que el calor puede dañar el material.
                     </p>
                     <p>
-                        <b>Aceite o Grasa</b>
+                        <b id="informacion">Aceite o Grasa</b>
                     </p>
                     <p>
                         En el caso de manchas con aceites o grasas consulte en tintorerías especializadas. Recuerde que el cuero es piel y son muy susceptibles a la absorción de estos fluidos.
                     </p>
                     <p>
-                        <b>Consejos y recomendaciones</b>
+                        <b id="informacion">Consejos y recomendaciones</b>
                     </p>
                     <ul>
                         <li>*La limpieza de las prendas se debe realizar en tintorerías especializadas.</li>
@@ -68,7 +68,7 @@
                         <li>*Nunca utilice: Jabón de Glicerina, limpiadores abrasivos, barniz, detergente u otros productos de limpieza, alcoholes o agua de amoniaco.</li>
                     </ul>
                     <p>
-                        <b>Materiales especiales</b>
+                        <b id="informacion">Materiales especiales</b>
                     </p>
                     <p>
                         Gamuzas: Los cueros con acabados gamuzados merecen un tratamiento especial.
@@ -104,15 +104,14 @@
 
                     </header>
                     <p>
-                        En Tribu cueros nos esforzamos por que nuestros productos tengan altísima calidad, sin embargo algún producto podría presentar algún daño causado por el transporte o el manipuleo. En caso de que esto ocurriera por favor comuníquese al <span id="colorPhone">011 49538621 / celular 1560452938</span> o envíe un mail a <span id="colorPhone">Info@tribucueros.com.ar</span>
+                        En Tribu cueros nos esforzamos por que nuestros productos tengan altísima calidad, sin embargo algún producto podría presentar algún daño causado por el transporte o el manipuleo. En caso de que esto ocurriera por favor comuníquese al <span id="colorPhone">011 49538621 / <span id="colorPhone">WhatSapp(+54) 011-15-60452938 </span></span> o envíe un mail a <span id="colorPhone">info@tribucueros.com.ar</span>
                     </p>
                     <ul>
-                        <li><strong>Para reenviarnos productos dañados adquiridos deberá hacer lo siguiente:</strong></li>
+                        <li>Para reenviarnos productos dañados adquiridos deberá hacer lo siguiente:</li>
                         <li>1. Empaque el artículo en su paquete original (siempre que sea posible).</li>
                         <li>2. Incluya su número de orden, su nombre, apellido y dirección de facturación.</li>
                         <li>3. Envíe el artículo a la siguiente dirección:</li>
-                        <li><span id="colorPhone">Tribu cueros By Angie Rodriguez-
-Av Corrientes 1965 4 L-
+                        <li><span id="colorPhone">Tribu cueros By Angie Rodriguez-Av Corrientes 1965 4 L-
     C.A.B.A (1045)</span></li>
                     </ul>
                     <p>
@@ -124,13 +123,13 @@ Av Corrientes 1965 4 L-
                         <h2 id="compra">SU COMPRA</h2>
                     </header>
                     <p>
-                        <b>Seguimiento de su orden</b>
+                        <b id="informacion">Seguimiento de su orden</b>
                     </p>
                     <p>
                         Una vez que el pedido ha sido retirado por la empresa de logística, le enviaremos un mail con el número de guía. Con este número de guía, estas compañías van a ser quienes les brinden información de seguimiento del envío, desde la salida desde nuestro local hasta la entrega en el domicilio indicado en el momento de la compra. El tiempo de entrega depende de la forma en que se envie.
                     </p>
                     <p>
-                        Si ha perdido su número de guía comuníquese telefónicamente al <span id="colorPhone">011 49538621 </span> o envíenos un mail a <span id="colorPhone">Info@tribucueros.com.ar</span>
+                        Si ha perdido su número de guía comuníquese telefónicamente al <span id="colorPhone">011 49538621 / </span>  <span id="colorPhone">WhatSapp(+54) 011-15-60452938 </span> o envíenos un mail a <span id="colorPhone">info@tribucueros.com.ar</span>
                     </p>
 
                 </section>
