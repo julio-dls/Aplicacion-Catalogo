@@ -64,19 +64,19 @@
           <form class="form-horizontal tasi-form text-center" action="panel.php" method="post" enctype="multipart/form-data">
               <div class="form-group has-success">
                   <label class="col-sm-2 control-label col-lg-2" for="inputSuccess">Nombre</label>
-                  <div class="col-lg-10">
+                  <div class="col-lg-4 col-md-4 col-sm-4">
                       <input type="text" class="form-control" id="inputSuccess" name="articulos" placeholder="Nombre Articulo">
                   </div>
               </div>
               <div class="form-group has-success">
                   <label class="col-sm-2 control-label col-lg-2" for="inputSuccess">Nombre en Ingles</label>
-                  <div class="col-lg-10">
+                  <div class="col-lg-4 col-md-4 col-sm-4">
                       <input type="text" class="form-control" id="inputSuccess" name="namearticle" placeholder="Name Article">
                   </div>
               </div>
               <div class="form-group has-success">
                   <label class="col-sm-2 control-label col-lg-2 " for="Categoria">Categoria</label>
-                  <div class="col-lg-10">
+                  <div class="col-lg-4 col-md-4 col-sm-4">
                       <select class="form-control cat_id" id="categoria" name="categoria" onfocus="detectionFocus(0)">
                       <?php
                       $consul = "SELECT nombre FROM categorias";
@@ -89,7 +89,7 @@
               </div>
               <div class="form-group has-success">
                   <label class="col-sm-2 control-label col-lg-2 " for="Categoria">Accesorios</label>
-                  <div class="col-lg-10">
+                  <div class="col-lg-4 col-md-4 col-sm-4">
                       <select class="form-control" id="accesorios" name="accesorios" onfocus="detectionFocus(1)">
                       <?php
                       $consul = "SELECT nombre FROM accesorios";
@@ -102,7 +102,7 @@
               </div>
               <div class="form-group has-success">
                   <label class="col-sm-2 control-label col-lg-2 " for="Categoria">Estacion</label>
-                  <div class="col-lg-10">
+                  <div class="col-lg-4 col-md-4 col-sm-4">
                       <select class="form-control" id="estacion" name="estacion" onfocus="detectionFocus(0)">
                       <?php
                       $consul = "SELECT nombre FROM estacion";
@@ -115,20 +115,20 @@
               </div>
               <div class="form-group has-success">
                   <label class="col-sm-2 control-label col-lg-2" for="inputWarning">Imagenes</label>
-                  <div class="col-lg-10">
+                  <div class="col-lg-6 col-md-6 col-sm-6">
                       <input type="file" class="form-control" id="inputSuccess" name="archivosImg[]" multiple accept="image/*">
                   </div>
               </div>
               <div class="form-group has-success">
                   <label class="col-sm-2 control-label col-lg-2" for="inputError">Descripcion</label>
                   <div class="col-lg-10">
-                      <textarea class="form-control" id="inputSuccess" name="descripcion"></textarea>
+                      <textarea class="form-control" id="inputSuccess" name="descripcion" rows="10" style="resize: none"></textarea>
                   </div>
               </div>
               <div class="form-group has-success">
                   <label class="col-sm-2 control-label col-lg-2" for="inputError">Descripcion en Ingles</label>
                   <div class="col-lg-10">
-                      <textarea class="form-control" id="inputSuccess" name="description"></textarea>
+                      <textarea class="form-control" id="inputSuccess" name="description" rows="10" style="resize: none"></textarea>
                   </div>
               </div>
               <div class="form-group has-success">

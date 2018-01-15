@@ -1,26 +1,25 @@
 <?php
-
 class dataPanel {
     private $con;
 
-    public function __construct($con) {
-      $this->con = $con;
+    function __construct($con){
+    	$this->con = $con;
     }
 
     function InsertarProcuto($data = array(),$fImg = array()) {
+
       if (!empty($data['categoria'])) {
-        $categ = $this->con->query("SELECT categoria_id FROM CATEGORIAS WHERE NOMBRE = '".$data['categoria']."' ")->fetch();
-        echo $categ;
+        $categ = $this->con->query("SELECT categorias.categoria_id FROM categorias WHERE categorias.nombre = '".$data['categoria']."' ")->fetch();
       } else {
         $categ['categoria_id'] = 0;
       }
       if (!empty($data['estacion'])) {
-        $est = $this->con->query('SELECT estacion_id FROM ESTACION WHERE NOMBRE = "'.$data['estacion'].'" ')->fetch();
+        $est = $this->con->query('SELECT estacion.estacion_id FROM estacion WHERE estacion.nombre = "'.$data['estacion'].'" ')->fetch();
       } else {
         $est['estacion_id'] = 0;
       }
       if (!empty($data['accesorios'])) {
-        $acces = $this->con->query('SELECT accesorios_id FROM ACCESORIOS WHERE NOMBRE = "'.$data['accesorios'].'" ')->fetch();
+        $acces = $this->con->query('SELECT accesorios.accesorios_id FROM accesorios WHERE accesorios.nombre = "'.$data['accesorios'].'" ')->fetch();
       } else {
         $acces['accesorios_id'] = 0;
       }
@@ -34,13 +33,13 @@ class dataPanel {
         VALUES ('".strtolower($data['articulos'])."','".strtolower($mensajeEs)."','".strtolower($data['namearticle'])."',
         '".strtolower($mensajeIng)."','".$categ['categoria_id']."','".$est['estacion_id']."','".$acces['accesorios_id']."')";
         $transCorrect=$this->con->exec($sql);
-        print_r($this->con->errorInfo());
+        //print_r($this->con->errorInfo());
       } else {
         $transCorrect = false;
       }
 
       if ($transCorrect) {
-        $id_prod = $this->con->query('SELECT producto_id FROM PRODUCTOS WHERE NOMBRE= "'.strtolower($data['articulos']).'" ')->fetch();
+        $id_prod = $this->con->query('SELECT productos.producto_id FROM productos WHERE productos.nombre= "'.strtolower($data['articulos']).'" ')->fetch();
 
         if (is_array($fImg['archivosImg'])) {
           if(isset($fImg['archivosImg']['name'])){

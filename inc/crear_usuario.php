@@ -8,10 +8,10 @@ class crear_usuario {
     }
 
     function insertUser($data = array()) {
-    $verifyUser = $this->con->query("SELECT * FROM usuarios WHERE nombre_usuario = '".$data['nameusuario']."' and email= '".$data['email']."' ")->fetch();
+    $verifyUser = $this->con->query("SELECT * FROM usuarios WHERE usuarios.nombre_usuario = '".$data['nameusuario']."' and email= '".$data['email']."' ")->fetch();
 
     if (empty($verifyUser)) {                                                   //VERIFICAR QUE EL USUARIO NO SE ENCUENTRE YA CARGADO
-      $insertUser = $this->con->query("SELECT id FROM PERMISOS WHERE NOMBRE = '".$data['privilegiosR']."' ")->fetch();
+      $insertUser = $this->con->query("SELECT id FROM permisos WHERE permisos.nombre = '".$data['privilegiosR']."' ")->fetch();
       $sql="INSERT INTO usuarios (id,email,pass,nombre,nombre_usuario,permisos)
       VALUES ('','".$data['email']."','".md5($data['pass'])."','".$data['nombre']."','".$data['nameusuario']."','".$insertUser['id']."' )";
       $insertUser = $this->con->exec($sql);
