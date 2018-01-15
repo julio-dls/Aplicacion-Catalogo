@@ -1,4 +1,5 @@
 <?php
+
 class dataPanel {
     private $con;
 
@@ -8,8 +9,8 @@ class dataPanel {
 
     function InsertarProcuto($data = array(),$fImg = array()) {
       if (!empty($data['categoria'])) {
-        $categ = $this->con->query->("SELECT categoria_id FROM CATEGORIAS WHERE NOMBRE = '".$data['categoria']."' ")->fetch();
-          var_dump($categ);
+        $categ = $this->con->query("SELECT categoria_id FROM CATEGORIAS WHERE NOMBRE = '".$data['categoria']."' ")->fetch();
+        echo $categ;
       } else {
         $categ['categoria_id'] = 0;
       }
@@ -33,7 +34,7 @@ class dataPanel {
         VALUES ('".strtolower($data['articulos'])."','".strtolower($mensajeEs)."','".strtolower($data['namearticle'])."',
         '".strtolower($mensajeIng)."','".$categ['categoria_id']."','".$est['estacion_id']."','".$acces['accesorios_id']."')";
         $transCorrect=$this->con->exec($sql);
-        //print_r($this->con->errorInfo());
+        print_r($this->con->errorInfo());
       } else {
         $transCorrect = false;
       }
