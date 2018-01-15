@@ -8,20 +8,28 @@ class crear_usuario {
     }
 
     function insertUser($data = array()) {
-    $verifyUser = $this->con->query("SELECT * FROM usuarios WHERE usuarios.nombre_usuario = '".$data['nameusuario']."' and email= '".$data['email']."' ")->fetch();
 
-    if (empty($verifyUser)) {                                                   //VERIFICAR QUE EL USUARIO NO SE ENCUENTRE YA CARGADO
-      $insertUser = $this->con->query("SELECT id FROM permisos WHERE permisos.nombre = '".$data['privilegiosR']."' ")->fetch();
-      $sql="INSERT INTO usuarios (id,email,pass,nombre,nombre_usuario,permisos)
-      VALUES ('','".$data['email']."','".md5($data['pass'])."','".$data['nombre']."','".$data['nameusuario']."','".$insertUser['id']."' )";
-      $insertUser = $this->con->exec($sql);
+    $sql = ("SELECT usuarios.nombre_usuario, usuarios.pass FROM usuarios WHERE usuarios.nombre_usuario = '".$data['nameusuario']."' and  email= '".$data['email']."' ");
+    $verifyUser = $this->con->query($sql)->fetch();
 
+    if (empty($verifyUser)) {
+
+      $insertUserPermisos = $this->con->query("SELECT permisos.id FROM permisos WHERE permisos.nombre = '".$data['privilegiosR']."' ")->fetch();
+
+      $sqlInsert = "INSERT INTO `usuarios`(`id`, `email`, `pass`, `nombre`, `nombre_usuario`, `permisos`)
+      VALUES  ('','".$data['email']."','".md5($data['pass'])."','".$data['nombre']."','".$data['nameusuario']."','".$insertUserPermisos['id']."' )";
+
+      echo $sqlInsert;
+
+      $insertUser = $this->con->exec($sqlInsert);
+      print_r($this->con->errorInfo());
       if ($insertUser) {
         redirect('login.php');
-      }
-    } else
-      {
-        redirect('register.php?Aviso=visible');
+      } else {
+          //redirect('register.php?Aviso=visible');
+        }
+    } else {
+        //redirect('register.php?Aviso=visible');
       }
   }
   // CORROBORAR QUE ESTA LOGUEADO

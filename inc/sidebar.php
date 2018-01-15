@@ -21,7 +21,7 @@
                 <a href="register.php">Crear Nuevo Usaurio</a>
               <?php endif; ?>
             </li>
-            <li><a href="deleteusers.php">Eliminar o Modificar Usuarios</a></li>
+            <li><a href="deleteusers.php">Eliminar o Modificar</a></li>
         </ul>
       </li>
       <li class="sub-menu">
