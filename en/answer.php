@@ -50,7 +50,7 @@ Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low pri
                         <b id="informacion">Footwear Protection</b>
                     </p>
                     <p>
-                      It is advisable to wipe with a dry cloth to remove excess dust and then place colorless waxes to protect leather from footwear. Avoid storing both shoes in the same bag or box, because, due to the use, the sole can with dust and mistreat the material, especially in suede materials.</p>
+                      It is advisable to clean with a dry cloth to remove surplus dust and then place colorless waxes to protect the leather from the shoes. Avoid storing both shoes in the same bag or box, because, due to the use, the sole can with dust and mistreat the material, especially in suede materials. </p>
                     <p>
                         <b id="informacion">Spills of liquids</b>
                     </p>
@@ -76,13 +76,11 @@ Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low pri
                         <b id="informacion">Special materials</b>
                     </p>
                     <p>
-                      Chamois: Chamois with suede finishes deserve special treatment.
+                      Chamois: Leather with chamois finish deserves special treatment A specific chamois protector is advised (although it may alter the color). Avoid rubbing with garments that tend to lose color (eg Jean) 
                     </p>
                     <ul>
-                        <li>*A specific chamois protector is advised (although it may alter the color).</li>
-                        <li>*Avoid rubbing with garments that tend to lose color (eg Jean).</li>
                         <li>*Avoid contact with surfaces with dust, grease, moisture, etc.</li>
-                        <li>*Contemplate that they can transfer color to other garments, Clear fabrics.</li>
+                        <li>*Contemplate that they can transfer color to other garments.</li>    
                     </ul>
                     <p>
                       Metallic: Metallic leathers deserve extra care.
@@ -112,7 +110,7 @@ Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low pri
                       At Tribu Cueros, we strive to ensure that our products are of the highest quality. However, some products may have some damage caused by transport or handling. In the event that this occurs please contact the <span id="colorPhone">011 49538621  / </span> <span id="colorPhone">WhatSapp(+54) 011-15-60452938 </span> or send an email to <span id="colorPhone">info@tribucueros.com.ar</span>
                     </p>
                     <ul>
-                        <li><strong>To resend damaged purchased products you must do the following:</strong></li>
+                        <li>To resend damaged purchased products you must do the following:</li>
                         <li>1. Pack the item in its original package (whenever possible).</li>
                         <li>2. Include your order number, your name, last name and billing address.</li>
                         <li>3. Send the item to the following address:</li>
@@ -127,7 +125,7 @@ Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low pri
                         <h2 id="compra">YOUR PURCHASE</h2>
                     </header>
                     <p>
-                        <b>Track your order</b>
+                        <b id="informacion">Track your order</b>
                     </p>
                     <p>
                       Once the order has been withdrawn by the logistics company, we will send you an email with the guide number. With this guide number, these companies will be the ones who will provide you with tracking information on the delivery, from the departure from our premises to the delivery at the address indicated at the time of purchase. Delivery time depends on the way it is shipped.
@@ -161,3 +159,4 @@ Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low pri
 </body>
 
 </html>
+

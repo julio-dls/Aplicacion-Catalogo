@@ -10,7 +10,7 @@
             <ul class="icons">
                 <li><a href="https://www.facebook.com/www.tribucueros.com.ar/?ref=aymt_homepage_panel" class="icon fa-facebook" target="new"><span class="label">Facebook</span></a></li>
                 <li><a href="https://www.instagram.com/angierodrigueztr/?hl=es" class="icon fa-instagram" target="new"><span class="label">Instagram</span></a></li>
-                <li><a href="" class="icon fa-pinterest" target="new"><span class="label">Pinterest </span></a></li>
+                <li><a href="https://ar.pinterest.com/angie9229/pins/" class="icon fa-pinterest" target="new"><span class="label">Pinterest </span></a></li>
             </ul>
         </section>
 

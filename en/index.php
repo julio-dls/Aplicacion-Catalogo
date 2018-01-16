@@ -74,21 +74,32 @@ $var="portada";
                 </div>
             </section>
 
-            <!-- Main -->
+                <!-- Main -->
             <div class="callout opacity">
+              <div class="fondoTransparente">
                 <article id="main" class="container special">
                         <header>
                             <p id="colorearparrafo">
-                                <strong>Argentine Design of International Quality, representing a segment of products that managed to give prominence to the portfolios and accessories.</strong>
+                                <strong>
+International quality Argentine design Tribu cueros By Angie Rodriguez represent a market
+segment, which has reached the handbags and accessories protagonist.</strong>
                             </p>
                         </header>
                         <p id="colorearparrafo">
-                            <strong>Fashion in leather accessories is changeable and capricious as youth, mestiza as a world without borders, efectista as a game of lights. That is why the best way to capture its essence is that through those details that seduce us on the street and any place where they want to look and say more by themselves than a distorted general image.</strong>
+                            <strong>The leather fashion accessories of this century are changed and capricious like the youth, mestizo
+like a World without boundaries, full of effects like a strobe light, that s why the greatest manner
+to change its essence is through the details that tempt us on the street and everywhere we want
+to wear them, and they express more than words by themselves, more than general distorted
+image.</strong>
                         </p>
                         <p id="colorearparrafo">
-                            <strong>Each collection has its own conceptual power, which weighs sophistication, defining a modern, avant-garde and elegant style. Each wallet inside has a zip pocket and a practical cell phone. The high standard of quality of raw materials and designs have made the brand currently positioned within an exclusive and international reach.</strong>
+                            <strong>
+Each collection has its conceptual concept, which always praises the sophistication than defines a
+modern, avant-garde and elegant stile. Each handbag has an internal zipper pocket and a key ring.
+Its commodities high quality just as its designs, stand on an exclusive and international segment.</strong>
                         </p>
                 </article>
+                </div>
             </div>
 
             <!-- SLIDER 2 -->
