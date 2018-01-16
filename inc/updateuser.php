@@ -12,8 +12,8 @@ include_once 'password_reset.php';
 */
 class updateuser {
   private $con;
-  const SECRET_PASS = 'jWbiiaG0';//;'8b7d99ed39a6ea';
-  const SECRET_USER = 'quirogajulio27@gmail.com';//'095854ad93c9d4';
+  const SECRET_PASS = '8b7d99ed39a6ea';
+  const SECRET_USER = '095854ad93c9d4';
 
   function __construct($con) {
     $this->con=$con;
