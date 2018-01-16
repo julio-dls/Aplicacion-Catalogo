@@ -37,7 +37,11 @@
             </ul>
         </li>
         <li><a href="index.php#formContact">Contacts</a></li>
+<<<<<<< HEAD
         <li><a href="../index.php">Language<img class="imgRedonda" src="../images/espanola-bandera.png" alt="/ES"></a></li>
+=======
+        <li><a href="../index.php">Idioma<img class="imgRedonda" src="iconoBandera/es-bandera.png" alt="/ES"></a></li>
+>>>>>>> 1c4a03633fced38cabcf028153a84ee0c86d6b97
 
     </ul>
 </nav>

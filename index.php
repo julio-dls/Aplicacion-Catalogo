@@ -76,24 +76,32 @@ if(!empty($_POST)) {
                 </div>
             </section>
 
-            <!-- Main -->
+              <!-- Main -->
             <div class="callout opacity">
              <div class="fondoTransparente">
                 <article id="main" class="container special">
                         <header>
                             <p>
-                                <strong>Diseño Argentino de calidad Internacional, representando un segmento de productos que lograron otorgarle protagonismo a las carteras y accesorios.
+                                <strong>Diseño Argentino de calidad Internacional, Tribu cueros By Angie Rodriguez, representa un
+segmento de productos que logaron otorgarle protagonismo a las carteras y accesorios.
                                 </strong>
                             </p>
                         </header>
                         <p>
-                            <strong>La moda en accesorios de cuero es cambiante y caprichosa como la juventud, mestiza como un mundo sin fronteras, efectista como un juego de luces. Por eso, que la mejor manera de captar su esencia que a través de esos detalles que nos seducen en la calle y cualquier lugar donde se quieran lucir y que dicen más por si solo que una imagen general distorsionada.</strong>
+                            <strong>La moda en accesorios de cuero es cambiante y caprichosa como la juventud, mestiza como un
+mundo sin fronteras, efectista como un juego de luces. Por eso, que la mejor manera de captar su
+esencia que a través de esos detalles que nos seducen en la calle y cualquier lugar donde se
+quieran lucir y que dicen más por si solo que una imagen general distorsionada.</strong>
                         </p>
                         <p>
-                            <strong>Cada colección posee su propio poder conceptual, el cual pondera la sofisticación, definiendo un estilo moderno, vanguardista y elegante. Cada cartera en su interior cuenta con bolsillo con cremallera y un practico porta celular. El alto estándar de calidad de las materias primas y diseños han hecho que la marca actualmente se encuentre posicionada dentro de un segmento exclusivo y de alcance internacional.</strong>
+                            <strong>Cada colección posee su propio poder conceptual, el cual pondera la sofisticación, definiendo un
+estilo moderno, vanguardista y elegante. Cada cartera en su interior cuenta con bolsillo con
+cremallera y un practico porta celular. El alto estándar de calidad de las materias primas y diseños
+han hecho que la marca actualmente se encuentre posicionada dentro de un segmento exclusivo y
+de alcance internacional.</strong>
                         </p>
                 </article>
-                </div>  
+                </div>
             </div>
             <!-- SLIDER 2 -->
             <div class="wrapper style1">
