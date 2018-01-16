@@ -4,9 +4,11 @@
  */
  //NUMEROS ALEATORIOS FUNCION RANDOM
 
-class password_reset_mensaje
-{
-  private $mensaje = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ES" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+class password_reset_mensaje {
+
+  private $codigoValidacion;
+
+  private $PrimerPartmensaje = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ES" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
   <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
     <head>
       <meta charset="utf-8">
@@ -57,6 +59,8 @@ class password_reset_mensaje
   					            <h2 style="box-sizing: border-box; color: #22BC66; font-family: Arial, '.'Helvetica Neue'.', Helvetica, sans-serif; font-size: 19px; font-weight: bold; margin-top: 0;" align="center"> info@tribucueros.com </h2>
                         <p style="box-sizing: border-box; color: #74787E; font-family: Arial, '.'Helvetica Neue'.', Helvetica, sans-serif; font-size: 16px; line-height: 1.5em; margin-top: 0;" align="left">Recientemente, solicitó restablecer su contraseña para su cuenta de TRIBU CUEROS. Utilice el botón de abajo para restablecerlo. <strong style="box-sizing: border-box; font-family: Arial, '.'Helvetica Neue'.', Helvetica, sans-serif;">Este restablecimiento de contraseña sólo es válido durante las próximas 24 horas.</strong></p>
 
+                          <h2 style="box-sizing: border-box; color: #22BC66; font-family: Arial, '.'Helvetica Neue'.', Helvetica, sans-serif; font-size: 19px; font-weight: bold; margin-top: 0;" align="center"> Introduzca el siguiente codigo de verificacion: "';
+private $SegundaPartmensaje ='" </h2>
                         <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0" style="box-sizing: border-box; font-family: Arial, '.'Helvetica Neue'.', Helvetica, sans-serif; margin: 30px auto; padding: 0; text-align: center; width: 100%;">
                           <tr>
                             <td align="center" style="box-sizing: border-box; font-family: Arial, '.'Helvetica Neue'.', Helvetica, sans-serif; word-break: break-word;">
@@ -115,17 +119,21 @@ class password_reset_mensaje
     </body>
   </html>';
 
-  public function  getMensaje()
-  {
-    // $mensaje = htmlentities($mensaje, ENT_NOQUOTES | ENT_HTML5, 'UTF-8');
-    return $this->mensaje;
-  }
-}
-  function aleatorioNum()
-  {
+  public function getAleatorioNum() {
     $number = range(0,12);
     shuffle($number);
-    $aux = implode($number);
-    return $aux;
+    return $this->codigoValidacion = implode($number);
   }
+
+  public function  getMensaje() {
+    // $mensaje = htmlentities($mensaje, ENT_NOQUOTES | ENT_HTML5, 'UTF-8');
+    $this->codigoValidacion = $this->getAleatorioNum();
+    $_SESSION['codigoValidacion'] = $this->codigoValidacion;
+    return $this->PrimerPartmensaje . $this->codigoValidacion . $this->SegundaPartmensaje;
+  }
+
+}
+
+
+
 ?>

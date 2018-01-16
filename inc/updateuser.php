@@ -12,8 +12,8 @@ include_once 'password_reset.php';
 */
 class updateuser {
   private $con;
-  const SECRET_PASS = '8b7d99ed39a6ea';
-  const SECRET_USER = '095854ad93c9d4';
+  const SECRET_PASS = 'jWbiiaG0';//;'8b7d99ed39a6ea';
+  const SECRET_USER = 'quirogajulio27@gmail.com';//'095854ad93c9d4';
 
   function __construct($con) {
     $this->con=$con;
@@ -26,7 +26,6 @@ class updateuser {
     {
       $message = new password_reset_mensaje();
 
-      //$codigo = aleatorioNum();                                               //CODIGO DE VERIFICACION
       $ejecut=$this->con->exec("INSERT INTO actualizacion_pass (id,nombre,codigo,fecha,actualizado,email)
                                 VALUES ('','".$result['nombre']."','".$codigo."','".date('d/m/y h:i:s')."','false','".$result['email']."'); ");
       $mail = new PHPMailer;
@@ -45,6 +44,8 @@ class updateuser {
       $mail->Subject  = "Restablecer Passwords";                                //ASUNTO
       $mail->Body .= $message->getMensaje();
 
+      $_SESSION['emailValidacion'] = $result['email'];
+
       if($mail->send())
       {
         redirect('change_password.php');
@@ -57,26 +58,32 @@ class updateuser {
 
   //CAMBIAR EL PASSWORD
   function change_pass($data = array()){
-    $resultado = $this->con->query("select id,email,nombre,actualizado from `actualizacion_pass` where codigo = '".trim($data['codigo'])."' ")->fetch();
-    if ($resultado['actualizado'] == "false")
-    {
-      if (!empty($resultado['nombre']) && !empty($resultado['email']))
-      {
-        $this->con->exec("update usuarios set pass = '".md5($data['pass'])."' where nombre = '".$resultado['nombre']."' and email = '".$resultado['email']."' ");
 
-        $this->con->exec("update actualizacion_pass set actualizado = 'true', fecha = '".date('d/m/y h:i:s')."' where nombre = '".$resultado['nombre']."' and email = '".$resultado['email']."' and id = '".$resultado['id']."'");
-        //if ($resultado2) {
-          //if ($resultado3) {
-            redirect('login.php');
+    if ($_SESSION['codigoValidacion'] == $data['codigo']) {
+      $sql = "select id,email,nombre,actualizado from actualizacion_pass where email = '".trim($_SESSION['emailValidacion'])."' and fecha = (select max(fecha) from actualizacion_pass) ";
+      echo "hasta aqui llego" .$sql;
+      $resultado = $this->con->query($sql)->fetch();
+      if ($resultado['actualizado'] == "false") {
+
+        if (!empty($resultado['nombre']) && !empty($resultado['email'])) {
+          $this->con->exec("update usuarios set pass = '".md5($data['pass'])."' where nombre = '".$resultado['nombre']."' and email = '".$resultado['email']."' ");
+
+          $this->con->exec("update actualizacion_pass set actualizado = 'true', fecha = '".date('d/m/y h:i:s')."' where nombre = '".$resultado['nombre']."' and email = '".$resultado['email']."' and id = '".$resultado['id']."'");
+          //if ($resultado2) {
+            //if ($resultado3) {
+              redirect('login.php');
+            //}
           //}
-        //}
+        }
       }
+    } else {
+      echo "<h1> LOS CODIGOS DE VALIDACION NO COHINCIDEN ... </h1>";
     }
   }
   //VERICICAR QUE EL USUARIO EXISTA
   function isLog(){
     if(!isset($_SESSION['usuario']) and !isset($_SESSION['password']) and !isset($_SESSION['privilegios'])){
-      redirect('login.php');
+      //redirect('login.php');
     }
   }
 
