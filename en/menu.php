@@ -37,7 +37,7 @@
             </ul>
         </li>
         <li><a href="index.php#formContact">Contacts</a></li>
-        <li><a href="../index.php">Idioma<img class="imgRedonda" src="../images/espanola-bandera.png" alt="/ES"></a></li>
+        <li><a href="../index.php">Idioma<img class="imgRedonda" src="iconoBandera/es-bandera.png" alt="/ES"></a></li>
 
     </ul>
 </nav>

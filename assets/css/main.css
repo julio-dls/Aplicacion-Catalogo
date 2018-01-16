@@ -409,7 +409,7 @@ input[type="button"].style2:active, input[type="submit"].style2:active, input[ty
 }
 .fondoTransparente{
 	background:#0000006b;
-	 width: 100%;
+    width: 100%;
     height: initial;
 }
 .margen {

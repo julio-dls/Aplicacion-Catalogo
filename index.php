@@ -93,7 +93,7 @@ if(!empty($_POST)) {
                             <strong>Cada colección posee su propio poder conceptual, el cual pondera la sofisticación, definiendo un estilo moderno, vanguardista y elegante. Cada cartera en su interior cuenta con bolsillo con cremallera y un practico porta celular. El alto estándar de calidad de las materias primas y diseños han hecho que la marca actualmente se encuentre posicionada dentro de un segmento exclusivo y de alcance internacional.</strong>
                         </p>
                 </article>
-                </div>  
+                </div>
             </div>
             <!-- SLIDER 2 -->
             <div class="wrapper style1">
