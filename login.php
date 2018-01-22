@@ -38,4 +38,3 @@ $access->logout($_GET);
       </div>
   </div>
   <!-- FIN DEL FORM LOGIN-->
-<?php include_once('inc/footer.php');?>
