@@ -83,7 +83,7 @@ class updateuser {
   //VERICICAR QUE EL USUARIO EXISTA
   function isLog(){
     if(!isset($_SESSION['usuario']) and !isset($_SESSION['password']) and !isset($_SESSION['privilegios'])){
-      //redirect('login.php');
+      redirect('login.php');
     }
   }
 

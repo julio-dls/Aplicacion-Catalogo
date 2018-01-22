@@ -46,14 +46,14 @@ class dataPanel {
             $id_producto = $id_prod['producto_id'];
 
             foreach($fImg['archivosImg']['name'] as $posicion => $nombre){
-              $ruta = '../Ange-Web/images/articulos/'.$id_producto;
+              $ruta = 'images/articulos/'.$id_producto;
               @mkdir($ruta);
               $tamanhos = array('0'=>array('ancho'=>'100','alto'=>'100','nombre'=>'thumb'),
                                 '1'=>array('ancho'=>'300','alto'=>'360','nombre'=>'small'),
                                 '2'=>array('ancho'=>'1100','alto'=>'1100','nombre'=>'big')
                               );
 
-              redimensionar('../Ange-Web/images/articulos/'.$id_producto.'/',
+              redimensionar('images/articulos/'.$id_producto.'/',
                             $fImg['archivosImg']['name'][$posicion],
                             $fImg['archivosImg']['tmp_name'][$posicion],
                             $posicion,

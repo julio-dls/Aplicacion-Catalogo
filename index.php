@@ -9,26 +9,23 @@ if(!empty($_POST)) {
 ?>
     <!DOCTYPE HTML>
     <html lang="es">
-
     <head>
         <title>Tribu Cueros</title>
         <meta charset="utf-8" />
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Local de carteras de cueros de Buenos Aires Argentina.Capital Federa. Carteras de cueros, cinturones, accesorios,zapatos,camperas, productos para mujer, entre otros.Trabajamos con experiencai el cuero">
-        <meta name="keywords" content="carteras de cuero, accesorios, zapatos,cinturones,comprar,vender, argentina,buenos aires, capital federal,leather,shoes,leather wallets, catálogos de carteras,portfolio catalogs, precios bajos, promociones, promoción, avenidad corrientes">
-
-        <link rel="stylesheet" href="assets/css/main.css" />
+        <meta name="description" content="Local leather portfolios of Buenos Aires Argentina.Capital Federa. Leather wallets, belts, accessories, shoes, camperas, women's products, among others. We work with experiencai leather">
+        <meta name="keywords" content="Leather, accessories, shoes, belts, buy, sell, argentina, buenos aires, federal capital,Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low prices, promotions, promotion, avenidad corrientes">
+        <link rel="stylesheet" href="/assets/css/main.css" />
         <link rel="icon" type="image/png" href="/images/logo/logito.gif" />
     </head>
-
     <body class="homepage">
         <div id="page-wrapper">
             <!-- Header -->
             <div id="header">
                 <!-- Inner -->
 
-              <div class="inner2">
+                <div class="inner2">
                     <header>
                         <h1><a href="index.php" id="logo">TRIBU CUEROS</a></h1>
                         <style type="text/css" media="screen, print">
@@ -36,14 +33,16 @@ if(!empty($_POST)) {
                                 font-family: "Lumpy";
                                 src: url("assets/fonts/Lumpy.TTF");
                             }
+
                             #angie {
                                 font-family: "Lumpy";
                             }
+
                         </style>
                         <p id="angie">by Angie Rodriguez</p>
-                       <hr />
+                        <hr />
                     </header>
-                   <footer>
+                    <footer>
                         <a href="#carousel" class="button circled scrolly">Start</a>
                     </footer>
                 </div>
@@ -78,8 +77,8 @@ if(!empty($_POST)) {
 
               <!-- Main -->
             <div class="callout opacity">
-             <div class="fondoTransparente">
-                <article id="main" class="container special">
+                <div class="fondoTransparente">
+                    <article id="main" class="container special">
                         <header>
                             <p>
                                 <strong>Diseño Argentino de calidad Internacional, Tribu cueros By Angie Rodriguez, representa un
@@ -100,23 +99,23 @@ cremallera y un practico porta celular. El alto estándar de calidad de las mate
 han hecho que la marca actualmente se encuentre posicionada dentro de un segmento exclusivo y
 de alcance internacional.</strong>
                         </p>
-                </article>
+                    </article>
                 </div>
             </div>
             <!-- SLIDER 2 -->
             <div class="wrapper style1">
-							<div class="gallery style2 medium lightbox onscroll-fade-in image2">
-                <?php
+                <div class="gallery style2 medium lightbox onscroll-fade-in image2">
+                    <?php
                 $imgSlider = $con->query("SELECT imgIndex_id from imgindex ORDER BY imgIndex_id ASC");
                 foreach ($imgSlider as $rows) { ?>
-                    <a href="/images/img/<?=$rows[0]?>/img_0_big.jpg">
+                        <a href="/images/img/<?=$rows[0]?>/img_0_big.jpg">
                       <img src="/images/img/<?=$rows[0]?>/img_0_small.jpg" alt="" />
                     </a>
-         <?php } ?>
-              </div>
+                        <?php } ?>
+                </div>
             </div>
             <!-- FIN DE SLIDER 2 -->
-             <!-- Footer -->
+            <!-- Footer -->
             <div id="footer">
                 <div class="container">
 
@@ -189,7 +188,7 @@ de alcance internacional.</strong>
                                             <p>(+54) 011-4953-8621</p>
                                         </section>
                                     </div>
-                                     <div class="6u 12u(mobile)">
+                                    <div class="6u 12u(mobile)">
                                         <section>
                                             <h3 class="icon fa-comment">Información</h3>
                                             <p>Concertar cita previa</p>
@@ -220,12 +219,11 @@ de alcance internacional.</strong>
         <script src="assets/js/main.js"></script>
 
         <!-- Script de la galery nueva -->
-         <script src="assets/js/js/jquery.scrollex.min.js"></script>
-         <script src="assets/js/js/jquery.scrolly.min.js"></script>
-         <script src="assets/js/js/main.js"></script>
-         <script src="assets/js/js/skel.min.js"></script>
+        <script src="assets/js/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/js/main.js"></script>
+        <script src="assets/js/js/skel.min.js"></script>
         <script src="assets/js/js/util.js"></script>
 
     </body>
-
     </html>

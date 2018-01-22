@@ -4,7 +4,7 @@
   include_once('inc/updateuser.php');
 
   $userupdate = new updateuser($con);
-  $userupdate->isLog();
+  //$userupdate->isLog();
 
   if (!empty($_POST)) {
     if ($_POST['pass'] == $_POST['newpass']) {
