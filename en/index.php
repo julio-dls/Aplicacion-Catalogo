@@ -63,7 +63,7 @@ $var="portada";
                             while(($archivo = readdir($dir)) !== false){
                               if($archivo != '.' && $archivo != '..' && stristr($archivo,'_small') !== false){ ?>
                     <article>
-                        <a href="detail.php?id=<?=$rows['producto_id']?>" class="image1 featured">
+                        <a href="details?id=<?=$rows['producto_id']?>" class="image1 featured">
                         <img src="/images/articulos/<?=$rows['producto_id']?>/<?=$archivo?>" alt="" class="grow"/></a>
                     </article>
                     <?php  }
