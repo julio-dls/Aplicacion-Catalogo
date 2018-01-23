@@ -9,7 +9,7 @@
         <meta name="description" content="Local de carteras de cueros de Buenos Aires Argentina.Capital Federa. Carteras de cueros, cinturones, accesorios,zapatos,camperas, productos para mujer, entre otros.Trabajamos con experiencai el cuero">
         <meta name="keywords" content="carteras de cuero, accesorios, zapatos,cinturones,comprar,vender, argentina,buenos aires, capital federal,leather,shoes,leather wallets, catálogos de carteras,portfolio catalogs, precios bajos, promociones, promoción, avenidad corrientes">
 
-        <link rel="icon" type="image/png" href="../Ange-Web/images/logo/logito.gif" />
+        <link rel="shortcut icon" href="favicon.png" type="image/png" />
         <link rel="stylesheet" href="assets/css/main.css" />
 
 </head>

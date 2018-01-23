@@ -10,7 +10,7 @@
   <meta name="keywords" content="carteras de cuero, accesorios, zapatos,cinturones,comprar,vender, argentina,buenos aires, capital federal,
    leather,shoes,leather wallets, catálogos de carteras,portfolio catalogs, precios bajos, promociones, promoción, avenidad corrientes">
 
-  <link rel="icon" type="image/png" href="/images/logo/logito.gif" />
+  <link rel="shortcut icon" href="favicon.png" type="image/png" />
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 

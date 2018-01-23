@@ -13,7 +13,7 @@ include ('../inc/config_conexion_db.php');
         <meta name="description" content="Local leather portfolios of Buenos Aires Argentina.Capital Federa. Leather wallets, belts, accessories, shoes, camperas, women's products, among others. We work with experiencai leather">
          <meta name="keywords" content="Leather, accessories, shoes, belts, buy, sell, argentina, buenos aires, federal capital,
 Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low prices, promotions, promotion, avenidad corrientes">
-     <link rel="icon" type="image/png" href="/images/logo/logito.gif" />
+     <link rel="shortcut icon" href="favicon.png" type="image/png" />
 
     <link rel="stylesheet" href="/assets/css/main.css" />
 </head>
