@@ -10,9 +10,8 @@ include ('../inc/config_conexion_db.php');
         <meta charset="utf-8" />
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Local leather portfolios of Buenos Aires Argentina.Capital Federa. Leather wallets, belts, accessories, shoes, camperas, women's products, among others. We work with experiencai leather">
-         <meta name="keywords" content="Leather, accessories, shoes, belts, buy, sell, argentina, buenos aires, federal capital,
-Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low prices, promotions, promotion, avenidad corrientes">
+        <meta name="description" content="Local leather portfolios of Buenos Aires Argentina.Capital Federal(Avenity Corrientes). Leather wallets, belts, accessories, shoes, camperas, women's products, among others. We work with experience leather">
+         <meta name="keywords" content="tribe leathers, leather wallets, leather belts factory in buenos aires, leather wallets and shoes, belts factory, leather wallet factory, leather belts factory, uru recoleta, un tribe, leather wallet, leather wallets of cow with hair, factory of leather jackets, factory of wholesale leather purses, shop.php? id =, factory of leathers, suede wallets, apolo, leather wallets, factories of leather purses, portfolios of leathers, images of leather wallets, shopping.php? id =, suede wallets with fringes, leather wallets argentina, casual bag, leather carpets, tribe, leather cell holders, leather wallets, the tribe, shop.php? iid =, boots leather, tribe clothing, clothing tribe, cowhide wallet, leather fringed wallets, giraffe fur boots, cowhide rugs, tribes, images of leather purses, factories of purses, images of leather of animals, leather of abritilla, suede wallets, wallets of Argentine leather, portfolios of leather of cow, handmade leather wallets, factory of purses, images of leather belts, leather belts, photos of leather purses, cow leather shoes">
      <link rel="shortcut icon" href="favicon.png" type="image/png" />
 
     <link rel="stylesheet" href="/assets/css/main.css" />

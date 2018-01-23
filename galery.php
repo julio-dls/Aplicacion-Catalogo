@@ -6,9 +6,9 @@
   <meta charset="utf-8" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Local de carteras de cueros de Buenos Aires Argentina.Capital Federa. Carteras de cueros, cinturones, accesorios,zapatos,camperas, productos para mujer, entre otros.Trabajamos con experiencai el cuero">
-  <meta name="keywords" content="carteras de cuero, accesorios, zapatos,cinturones,comprar,vender, argentina,buenos aires, capital federal,
-   leather,shoes,leather wallets, catálogos de carteras,portfolio catalogs, precios bajos, promociones, promoción, avenidad corrientes">
+  <meta name="description" content="Local de Carteras en Buenos Aires Argentina.Capital Federal(Avenidad Corrientes). Carteras, accesorios, zapatos,cinturones, camperas, productos de mujer. Nosotros trabajamos con la calidad del cuero">
+        <meta name="keywords" content="tribu cueros,carteras de cuero,fabrica de cinturones de cuero en buenos aires,carteras y zapatos de cuero,fabrica de cinturones,fabrica de carteras de cuero,fabrica de cinturones de cuero,uru recoleta,une tribu,leather wallet,carteras de cuero de vaca con pelo,fabrica de camperas de cuero,fabrica de carteras de cuero por mayor,shop.php?id=,fabrica de cueros,carteras gamuza,apolo,carteras cuero,fabricas de carteras de cuero,carteras de cueros,imágenes de carteras de cuero,shopping.php?id=,carteras de gamuza con flecos,carteras cuero argentina,casual bag,alfombras de cuero,tribu,portacelulares de cuero,carteritas de cuero,la tribu,shop.php?iid=,botas de cuero,ropa tribu,tribu ropa,cartera de cuero de vaca,carteras con flecos de cuero,botas de piel de jirafa
+        ,alfombras de cuero de vaca,tribus,imagenes de carteras de cuero,fabricas de carteras,imagenes de cuero de animales,cuero de abritilla,carteras de gamuza,carteras de cuero argentina,carteras de cuero de vaca,carteras de cuero artesanales,fabrica de carteras,imagenes de cinturones de cuero,cinturones de cuero,fotos de carteras de cuero,zapatos de cuero de vaca">
 
   <link rel="shortcut icon" href="favicon.png" type="image/png" />
   <link rel="stylesheet" href="assets/css/main.css" />
