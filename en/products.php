@@ -103,7 +103,7 @@ include ('../inc/config_conexion_db.php');
                 while(($archivo = readdir($dir)) !== false) {                    //RECORRE LAS CARPETAS QUE CONTIENE TODAS LAS IMAGENES
                   if($archivo != '.' && $archivo != '..' && stristr($archivo,'0_small') !== false) {?>
                     <article class="4u 12u(mobile) special minimoAlto">
-                      <a href="detail.php?id=<?=$rows['producto_id']?>" class="image1 featured">
+                      <a href="details?id=<?=$rows['producto_id']?>" class="image1 featured">
                         <img src="/images/articulos/<?=$rows['producto_id']?>/<?=$archivo?>" alt="" class="grow"/></a>
                       <div class="rows">
                         <header>

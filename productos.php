@@ -99,7 +99,7 @@
                   if($archivo != '.' && $archivo != '..' && stristr($archivo,'0_small') !== false)
                   {?>
                     <article class="4u 12u(mobile) special minimoAlto product-container">
-                      <a class="image-container" href="detail.php?id=<?=$rows['producto_id']?>" class="image1 featured">
+                      <a class="image-container" href="detalles?id=<?=$rows['producto_id']?>" class="image1 featured">
                         <img src="/images/articulos/<?=$rows['producto_id']?>/<?=$archivo?>" alt="" class="grow"/></a>
                      <div class="rows title-container">
                         <header>

@@ -1,5 +1,5 @@
 <?php
-include ('../inc/config_conexion_db.php');
+include 'inc/config_conexion_db.php';
 
 if (!isset($_GET['id']) && empty($_GET['id'])) {
   redirect('galery.php');
@@ -18,24 +18,25 @@ function redirect($pURL) {
 ?>
 <!DOCTYPE HTML>
 
-<html lang="en">
+<html>
 
 <head>
-    <title>Tribu Cueros</title>
+        <title>Tribu Cueros</title>
         <meta charset="utf-8" />
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-         <meta name="description" content="Local leather portfolios of Buenos Aires Argentina.Capital Federal(Avenity Corrientes). Leather wallets, belts, accessories, shoes, camperas, women's products, among others. We work with experience leather">
-         <meta name="keywords" content="tribe leathers, leather wallets, leather belts factory in buenos aires, leather wallets and shoes, belts factory, leather wallet factory, leather belts factory, uru recoleta, a tribe, leather wallet, leather wallets of cow with hair, factory of leather jackets, factory of wholesale leather purses, shop.php? id =, factory of leathers, suede wallets, apolo, leather wallets, factories of leather purses, portfolios of leathers, images of leather wallets, shopping.php? id =, suede wallets with fringes, leather wallets argentina, casual bag, leather carpets, tribe, leather cell holders, leather wallets, the tribe, shop.php? iid =, boots leather, tribe clothing, clothing tribe, cowhide wallet, leather fringed wallets, giraffe fur boots, cowhide rugs, tribes, images of leather purses, factories of purses, images of leather of animals, leather of abritilla, suede wallets, wallets of Argentine leather, portfolios of leather of cow, handmade leather wallets, factory of purses, images of leather belts, leather belts, photos of leather purses, cow leather shoes">
-Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low prices, promotions, promotion, avenidad corrientes">
-     <link rel="shortcut icon" href="favicon.png" type="image/png" />
-    <link rel="stylesheet" href="/assets/css/main.css" />
+        <meta name="description" content="Local de Carteras en Buenos Aires Argentina.Capital Federal(Avenidad Corrientes). Carteras, accesorios, zapatos,cinturones, camperas, productos de mujer. Nosotros trabajamos con la calidad del cuero">
+        <meta name="keywords" content="tribu cueros,carteras de cuero,fabrica de cinturones de cuero en buenos aires,carteras y zapatos de cuero,fabrica de cinturones,fabrica de carteras de cuero,fabrica de cinturones de cuero,uru recoleta,une tribu,leather wallet,carteras de cuero de vaca con pelo,fabrica de camperas de cuero,fabrica de carteras de cuero por mayor,shop.php?id=,fabrica de cueros,carteras gamuza,apolo,carteras cuero,fabricas de carteras de cuero,carteras de cueros,imágenes de carteras de cuero,shopping.php?id=,carteras de gamuza con flecos,carteras cuero argentina,casual bag,alfombras de cuero,tribu,portacelulares de cuero,carteritas de cuero,la tribu,shop.php?iid=,botas de cuero,ropa tribu,tribu ropa,cartera de cuero de vaca,carteras con flecos de cuero,botas de piel de jirafa
+        ,alfombras de cuero de vaca,tribus,imagenes de carteras de cuero,fabricas de carteras,imagenes de cuero de animales,cuero de abritilla,carteras de gamuza,carteras de cuero argentina,carteras de cuero de vaca,carteras de cuero artesanales,fabrica de carteras,imagenes de cinturones de cuero,cinturones de cuero,fotos de carteras de cuero,zapatos de cuero de vaca">
+
+        <link rel="shortcut icon" href="favicon.png" type="image/png" />
+        <link rel="stylesheet" href="assets/css/main.css" />
     <style>
         #gal1 img {
             border: 2px solid white;
             padding: 20px 0 0 20px;
         }
-
         .active img {
             border: 2px solid #333 !important;
         }
@@ -48,10 +49,10 @@ Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low pri
         <div id="header2">
 
             <!-- Inner -->
-           <?php include('lumpy.php');?>
+            <?php include('inc/lumpy.php');?>
 
             <!-- Nav -->
-            <?php include('menu.php');?>
+            <?php include('inc/menu.php');?>
         </div>
         <!--COMIENZO DETALLE-->
         <div class="wrapper style1">
@@ -68,7 +69,8 @@ Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low pri
                         if (!empty($producto)) {
                           foreach ($producto as $rows) { ?>
                             <figure>
-                              <img class="6u 6u(mobile)" id="zoom_01" src="/images/articulos/<?=$rows['producto_id']?>/img_0_small.jpg" data-zoom-image="/images/articulos/<?=$rows['producto_id']?>/img_0_big.jpg" />
+                              <img class="6u 6u(mobile)" id="zoom_01" src="/images/articulos/<?=$rows['producto_id']?>/img_0_small.jpg"
+                                    data-zoom-image="/images/articulos/<?=$rows['producto_id']?>/img_0_big.jpg" />
                             </figure>
                     <?php  }
                         }
@@ -80,13 +82,12 @@ Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low pri
                             $sql = 'SELECT * FROM productos WHERE producto_id="'.$_GET['id'].'" LIMIT 1';
                             $producto = $con->query($sql);
                               if(!empty($producto)) {
-                                $count=1;
                                 foreach ($producto as $rows) {
-                                  $path = '/images/articulos/'.$rows['producto_id'];
-                                  $carpeta = $_SERVER['DOCUMENT_ROOT'] . '/' . $path;
+                                    $path = 'images/articulos/'.$rows['producto_id'];
+                                    $carpeta = $_SERVER['DOCUMENT_ROOT'] . '/' . $path;
                                     if($dir = opendir($carpeta)) {
-                                      while ($archivo = readdir($dir)) {
-                                       if($archivo != '.' and $archivo != '..' and stristr($archivo,'big') !== false) { ?>
+                                      while ($archivo = readdir($dir)) { 
+                                        if($archivo != '.' and $archivo != '..' and stristr($archivo,'big') !== false) { ?>
                                           <a href="#" data-image="/images/articulos/<?=$rows['producto_id']?>/<?=$archivo?>" 
                                           data-zoom-image="/images/articulos/<?=$rows['producto_id']?>/<?=$archivo?>">
                                           <?php 
@@ -96,7 +97,7 @@ Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low pri
                                           <header></header>
                                           <p></p>
                                   <?php }
-                                      }
+                                       }
                                     }
                                       closedir($dir);
                                 }
@@ -109,12 +110,12 @@ Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low pri
                     <header id="descripcion-detalle">
                         <h3>
                             <a id="estilo-detalle" href="#">
-                                <?=strtoupper($rows['nombre-ingles'])?>
+                                <?=strtoupper($rows['nombre'])?>
                             </a>
                         </h3>
                     </header>
                     <p id="parrafo-detalle">
-                        <?=ucfirst($rows['descripcion-ingles'])?>
+                        <?=ucfirst($rows['descripcion'])?>
                     </p>
                 </div>
             </div>
@@ -124,7 +125,7 @@ Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low pri
         <div class="container">
             <article class="12u(mobile) special">
                 <header>
-                    <h3 id="colorPhone">I would also like you</h3>
+                    <h3 id="colorPhone">También le prodía gustar</h3>
                 </header>
             </article>
             <div class="row" id="centrar">
@@ -147,14 +148,14 @@ Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low pri
             for($i=0; $i < count($valores); $i++){
                 if($valores[$i] != $idProducto){
                     $count++;
-                    $path = '/images/articulos/'.$valores[$i];
+                    $path = 'images/articulos/'.$valores[$i];
                     $carpeta = $_SERVER['DOCUMENT_ROOT'] . '/' . $path;
                    if(is_dir($carpeta)){
                     if($dir = opendir($carpeta)){
                       while(($archivo = readdir($dir)) !== false){
                         if($archivo != '.' && $archivo != '..' && stristr($archivo,'0_small') !== false){ ?>
                             <article class="4u 12u(mobile) special">
-                                <a href="detail.php?id=<?=$valores[$i]?>" class="image1 featured">
+                                <a href="detalles?id=<?=$valores[$i]?>" class="image1 featured">
                                 <img src="/images/articulos/<?=$valores[$i]?>/<?=$archivo?>" alt="" /></a>
                             </article>
                      <?php }
@@ -162,7 +163,7 @@ Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low pri
                     }
                    }
                 }
-                if($count ==3) {
+                if($count == 3) {
                   break;
                 }
             } ?>
@@ -178,23 +179,23 @@ Leather, shoes, leather wallets, portfolio catalogs, portfolio catalogs, low pri
             <div class="row">
                 <div class="12u">
                     <!-- Contact -->
-                    <?php include('sectionContact.php');?>
+                    <?php include('inc/sectionContact.php');?>
                 </div>
             </div>
         </div>
     </div>
     <!-- FIN DE FOOTER -->
     <!-- Scripts -->
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/jquery.dropotron.min.js"></script>
-    <script src="/assets/js/jquery.scrolly.min.js"></script>
-    <script src="/assets/js/jquery.onvisible.min.js"></script>
-    <script src="/assets/js/skel.min.js"></script>
-    <script src="/assets/js/util.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.onvisible.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-    <script src="/assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
     <!-- Script ELEvate -->
-    <script src='/assets/js/jquery.elevateZoom-3.0.8.min.js'></script>
+    <script src='assets/js/jquery.elevateZoom-3.0.8.min.js'></script>
 
     <script>
         //initiate the plugin and pass the id of the div containing gallery images
