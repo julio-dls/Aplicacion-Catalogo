@@ -190,16 +190,7 @@
     </div>
     <!-- FIN MODIFICAR IMAGENES -->
 
-    <!-- FOOTER START -->
-    <section style="position: absolute;bottom: 0; width: 100%;height: 60px;"id="footer">
-      <footer class="site-footer">
-        <div class="panel-body text-center">
-          2017 - TRIBU CUEROS
-          <a href="delete.php" class="go-top"><i class="fa fa-angle-up"></i></a>
-        </div>
-      </footer>
-    </section>
-    <!-- FOOTER END -->
+    
 
     <!-- comienzo bloqueo campos -->
     <script type="text/javascript">

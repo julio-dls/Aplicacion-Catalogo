@@ -12,8 +12,8 @@ require_once ('phpmailermaster/vendor/phpmailer/phpmailer/PHPMailerAutoload.php'
 class contact
 {
   private $con;
-  const SECRET_PASS = '8b7d99ed39a6ea';
-  const SECRET_USER = '095854ad93c9d4';
+  const SECRET_PASS = 'cueros2012';
+  const SECRET_USER = 'info@tribucueros.com.ar';
 
   function __construct($con)
   {
@@ -26,18 +26,18 @@ class contact
     {
       $mail = new PHPMailer;
       $mail->isSMTP();                                                          //ESTABLECER EL USO DE CORREO
-      $mail->Host =  'smtp.gmail.com';//'smtp.mailtrap.io';
+      $mail->Host = 'smtp.tribucueros.com.ar';  //'smtp.gmail.com';//'smtp.mailtrap.io';
       $mail->SMTPAuth = true;
       $mail->Username = self::SECRET_USER;
       $mail->Password = self::SECRET_PASS;                                      //CONTRASEÑA EN CONSTANTES
       // $mail->SMTPOptions = array('ssl' => array('verify_peer' => false,'verify_peer_name' => false,'allow_self_signed' => true));
-      $mail->SMTPSecure = "ssl";
-      $mail->Port = 465;
+      $mail->SMTPSecure = '';
+      $mail->Port = 25;
       // $mail->Port = 25 or 465 or 587;
       $mail->setFrom($data['email']);                                           //REMITENTE
       $mail->addAddress(self::SECRET_USER);                                     //DESTINATARIO
       $mail->isHTML(true);                                                      //EL CORREO SE ENVIA COMO HTML
-      $mail->Subject  = "Consutla de: " .$data['name'];                         //ASUNTO
+      $mail->Subject  = "Consutla desde pagina de: " .$data['name'];                         //ASUNTO
       $mail->Body =
       '<!DOCTYPE html>'.
       '<html>'.
@@ -59,11 +59,10 @@ class contact
         '</body>'.
       '</html>';
       $mail->send();
-      // if(!$mail->send()) {
-      //   echo 'Mailer error: ' .$mail->ErrorInfo;
-      // } else {
-      //   echo 'Message has been sent.';
-      // }
+        if(!$mail->send()) { 
+		//echo 'Mailer error: ' .$mail->ErrorInfo; 
+		} 
+		//else { echo ' <script>alertify.success("Correo <a href=""><b>Enviado Correctamente!</b></a>");</script>'; }
     }
   }
 }

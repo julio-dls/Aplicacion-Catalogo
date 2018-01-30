@@ -151,16 +151,7 @@
   </section>
   <!-- FIN CONTAINER-->
 
-  <!-- FOOTER START -->
-  <section id="footer">
-    <footer class="site-footer">
-      <div class="panel-body text-center">
-        2017 - TRIBU CUEROS
-        <a href="#main-content" class="go-top"><i class="fa fa-angle-up"></i></a>
-      </div>
-    </footer>
-  </section>
-  <!-- FOOTER END -->
+ 
 
     <!-- comienzo bloqueo campos -->
     <script type="text/javascript">
