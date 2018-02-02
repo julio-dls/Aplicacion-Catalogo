@@ -23,7 +23,7 @@ if(!empty($_POST)) {
     <body class="homepage">
         <div id="page-wrapper">
             <!-- Header -->
-            <div id="header">
+            <div id="header" class="responsive-image">
                 <!-- Inner -->
 
                 <div class="inner2">

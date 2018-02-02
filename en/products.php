@@ -11,7 +11,7 @@ include ('../inc/config_conexion_db.php');
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Local leather portfolios of Buenos Aires Argentina.Capital Federal(Avenity Corrientes). Leather wallets, belts, accessories, shoes, camperas, women's products, among others. We work with experience leather">
-         <meta name="keywords" content="tribe leathers, leather wallets, leather belts factory in buenos aires, leather wallets and shoes, belts factory, leather wallet factory, leather belts factory, uru recoleta, un tribe, leather wallet, leather wallets of cow with hair, factory of leather jackets, factory of wholesale leather purses, shop.php? id =, factory of leathers, suede wallets, apolo, leather wallets, factories of leather purses, portfolios of leathers, images of leather wallets, shopping.php? id =, suede wallets with fringes, leather wallets argentina, casual bag, leather carpets, tribe, leather cell holders, leather wallets, the tribe, shop.php? iid =, boots leather, tribe clothing, clothing tribe, cowhide wallet, leather fringed wallets, giraffe fur boots, cowhide rugs, tribes, images of leather purses, factories of purses, images of leather of animals, leather of abritilla, suede wallets, wallets of Argentine leather, portfolios of leather of cow, handmade leather wallets, factory of purses, images of leather belts, leather belts, photos of leather purses, cow leather shoes">
+         <meta name="keywords" content="tribu leathers, leather wallets, leather belts factory in buenos aires, leather wallets and shoes, belts factory, leather wallet factory, leather belts factory, uru recoleta, un tribe, leather wallet, leather wallets of cow with hair, factory of leather jackets, factory of wholesale leather purses, shop.php? id =, factory of leathers, suede wallets, apolo, leather wallets, factories of leather purses, portfolios of leathers, images of leather wallets, shopping.php? id =, suede wallets with fringes, leather wallets argentina, casual bag, leather carpets, tribe, leather cell holders, leather wallets, the tribe, shop.php? iid =, boots leather, tribe clothing, clothing tribe, cowhide wallet, leather fringed wallets, giraffe fur boots, cowhide rugs, tribes, images of leather purses, factories of purses, images of leather of animals, leather of abritilla, suede wallets, wallets of Argentine leather, portfolios of leather of cow, handmade leather wallets, factory of purses, images of leather belts, leather belts, photos of leather purses, cow leather shoes">
      <link rel="shortcut icon" href="favicon.png" type="image/png" />
 
     <link rel="stylesheet" href="/assets/css/main.css" />
@@ -56,7 +56,7 @@ include ('../inc/config_conexion_db.php');
                     <h1 id="nameGaleria">Products</h1>
           <?php } ?>
         </div>
-        <div class="row">
+        <div class="row gallery-container">
         <?php
         $pagina = 0;
         // $cantidadPaginas = $con->query("SELECT count(1) as cant FROM productos WHERE 1=1 AND categoria = 5 AND estacion = 4 ")->fetch();//$con->query("SELECT count(1) as cant FROM productos")->fetch();
@@ -102,10 +102,10 @@ include ('../inc/config_conexion_db.php');
             if($dir = opendir($carpeta)){
                 while(($archivo = readdir($dir)) !== false) {                    //RECORRE LAS CARPETAS QUE CONTIENE TODAS LAS IMAGENES
                   if($archivo != '.' && $archivo != '..' && stristr($archivo,'0_small') !== false) {?>
-                    <article class="4u 12u(mobile) special minimoAlto">
-                      <a href="details?id=<?=$rows['producto_id']?>" class="image1 featured">
+                    <article class="4u 12u(mobile) special minimoAlto product-container">
+                      <a class="image-container" href="details?id=<?=$rows['producto_id']?>" class="image1 featured">
                         <img src="/images/articulos/<?=$rows['producto_id']?>/<?=$archivo?>" alt="" class="grow"/></a>
-                      <div class="rows">
+                      <div class="rows title-container">
                         <header>
                           <h3><a href="#"><?=strtoupper($rows['nombre-ingles'])?></a></h3>
                         </header>

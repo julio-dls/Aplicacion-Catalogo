@@ -62,7 +62,7 @@ class contact
         if(!$mail->send()) { 
 		//echo 'Mailer error: ' .$mail->ErrorInfo; 
 		} 
-		//else { echo ' <script>alertify.success("Correo <a href=""><b>Enviado Correctamente!</b></a>");</script>'; }
+		//else {echo '<script>alert("mensaje de alerta");</script>; '}
     }
   }
 }
