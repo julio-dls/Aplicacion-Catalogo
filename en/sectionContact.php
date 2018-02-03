@@ -5,7 +5,7 @@
         <!-- Contact -->
         <section class="contact">
             <header>
-                <h3>¡FOLLOW US!</h3>
+                <h3 id="contactCenter">¡FOLLOW US!</h3>
             </header>
             <ul class="icons">
                 <li><a href="https://www.facebook.com/www.tribucueros.com.ar/?ref=aymt_homepage_panel" class="icon fa-facebook" target="new"><span class="label">Facebook</span></a></li>

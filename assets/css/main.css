@@ -353,7 +353,7 @@ input[type="button"].style2:active, input[type="submit"].style2:active, input[ty
 .image1 img {
   display: block;
   padding: 20px;
-  max-height: 350px;
+  max-height: 280px; /*350*/
   margin-left: 0px;
 }
 
@@ -406,6 +406,18 @@ input[type="button"].style2:active, input[type="submit"].style2:active, input[ty
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+@media screen and (max-width: 736px) {
+  .callout {
+  display: table;
+  width: 100%;
+  height: initial; /*  height: 500px;*/
+  background: url(../../images/muestra/fondoMovil.jpg) no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+ }
 }
 .fondoTransparente{
 	background:#0000006b;
@@ -3163,6 +3175,9 @@ body.homepage.is-loading #header:after {
   #header .button {
     margin-left: 100px;
   }
+  #contactCenter{
+	margin-right: 40px;
+}
 }
 
 /******GALERY NUEVA*******/
